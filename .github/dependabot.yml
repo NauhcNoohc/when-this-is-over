@@ -1,0 +1,23 @@
+# Dependabot raises pull requests automatically to keep dependencies up to date.
+# Security fix PRs are also raised when "Dependabot security updates" is enabled
+# in Settings > Code security.
+version: 2
+updates:
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+
+  - package-ecosystem: "npm"
+    directory: "/client"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+
+  - package-ecosystem: "npm"
+    directory: "/server"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
